@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="stars-layer" id="starsLayer"></div>
+
 
 <!-- HERO -->
 <section class="hero">
@@ -102,23 +104,23 @@
 <!-- GALLERY -->
 <section class="section">
   <p class="section-label">The fleet</p>
-  <h2 class="section-title">A historical collection</h2>
+  <h2 class="section-title">Hall of fame</h2>
   <div class="gallery">
     <div class="gallery-item" onclick="openLightbox('img4')">
       <img class="gallery-img purple-s5" src="images/purple-s5.jpeg">
-      <div class="gallery-caption">Purple S5 · Cape Town · aired out 🤌</div>
+      <div class="gallery-caption">Purple S5 · rolling shot 🧻</div>
     </div>
     <div class="gallery-item" onclick="openLightbox('img1')">
       <img class="gallery-img rs5" src="images/rs5.jpeg">
-      <div class="gallery-caption">Red RS5 · mountain run 🏔️</div>
+      <div class="gallery-caption">RS5 · breakfast run 🍳</div>
     </div>
     <div class="gallery-item" onclick="openLightbox('img2')">
       <img class="gallery-img red-s5" src="images/red-s5.jpeg">
-      <div class="gallery-caption">S5 Zero Lag · ready to pull 🚀</div>
+      <div class="gallery-caption">Red S5 · ready to pull 🚀</div>
     </div>
     <div class="gallery-item" onclick="openLightbox('img3')">
       <img class="gallery-img r8" src="images/r8.jpeg">
-      <div class="gallery-caption">R8 in the lot · casual supercar 💙</div>
+      <div class="gallery-caption">R8 · casual supercar 💙</div>
     </div>
   </div>
 </section>
@@ -133,3 +135,32 @@
   <img class="milo-img" src="images/milo.jpeg">
   </div>
 </section>
+
+<hr class="divider">
+
+<!-- TRAITS -->
+<section class="section">
+  <p class="section-label">Spec sheet</p>
+  <h2 class="section-title">What he's built with</h2>
+  <div class="traits">
+    <div class="trait"><span class="trait-icon">💙</span><span class="trait-label">Always Supportive</span><span class="trait-desc">No matter what, you've always had my back.</span></div>
+    <div class="trait"><span class="trait-icon">💪</span><span class="trait-label">Hardworking</span><span class="trait-desc">Your dedication inspires everyone around you.</span></div>
+    <div class="trait"><span class="trait-icon">🤝</span><span class="trait-label">Generous</span><span class="trait-desc">Always willing to help, often without being asked.</span></div>
+    <div class="trait"><span class="trait-icon">😊</span><span class="trait-label">Kind</span><span class="trait-desc">You treat everyone with genuine care and respect.</span></div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<footer class="footer">
+  Made with ❤️ for <strong>Dad @ jtechmods</strong> · Father's Day 2026
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+<script src="main.js"></script>
+</body>
+</html>
