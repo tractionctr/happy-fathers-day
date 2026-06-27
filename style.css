@@ -111,7 +111,7 @@ body {
 /* ── CAR TRACK ── */
 .car-track {
   position: relative;
-  height: 80px;
+  height: 120px;
   overflow: hidden;
   background: var(--surface);
   border-top: 1px solid var(--border);
@@ -135,14 +135,17 @@ body {
 }
 .car-svg {
   position: absolute;
-  bottom: 18px;
-  animation: vroom 6s ease-in-out infinite;
+  bottom: -55px;
+  animation: vroom 5s linear infinite;
 }
 @keyframes vroom {
-  0%      { left: -15%; }
-  85%     { left: 110%; }
-  85.001% { left: -15%; }
-  100%    { left: -15%; }
+  0%      { left: -20%; }
+  100%    { left: 110%; }
+}
+.car-svg img {
+  height: 190px;
+  width: auto;
+  display: block;
 }
 
 /* ── SECTIONS ── */
@@ -305,7 +308,7 @@ body {
 
 .milo-img {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4/3;
   object-fit: cover;
   object-position: center 60%;
 }
